@@ -1,7 +1,7 @@
 body{
     background-image: linear-gradient(#f6feff,#0b7994);  
-    background-size: 100% 2000px;
-    background-repeat:no-repeat ;
+    background-size: cover;
+    background-repeat:no-repeat;
     height: 100%;  
 }
 
@@ -15,14 +15,19 @@ img{
 
 /* Title of chip  */
 
-li.t{
-    font-size: x-large;
+.t{
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 /* INFORMATIQUE ET SCIENCES */
 
-ul.a{
+.a{
     font-style: italic;
+    margin-bottom: 5px;
+}
+.b{
+    margin-bottom: 10px;
 }
 .CV{
     text-align: center 
@@ -30,13 +35,15 @@ ul.a{
 
 /* Navigation buttons */
 
-.wrapper {
+.wrapper 
+{
     margin: 80px auto;
     text-align: center;
     width: 100%;
     position: relative;
-    }
-    .button {
+}
+.button 
+{
     padding: 15px 100px;
     margin:10px 4px;
     color: #86421a;
@@ -46,13 +53,15 @@ ul.a{
     position: relative;
     text-decoration: none;
     display:inline-block;
-    }
-    .button{
+}
+.button
+{
     border:1px solid transparent; 
     -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
     transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
-    }
-    .button::before {
+}
+.button::before 
+{
     content: '';
     position: absolute;
     left: 0px;
@@ -65,11 +74,13 @@ ul.a{
     display: block;
     -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
     transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
-    }
-    .button:hover::before {
+}
+.button:hover::before 
+{
     width:100%;
-    }
-    .button::after {
+}
+.button::after 
+{
     content: '';
     position: absolute;
     right: 0px;
@@ -80,11 +91,13 @@ ul.a{
     background: #a9c1e8;
     -webkit-transition: all 0.4s cubic-bezier(.7, .25, 0, 1);
     transition: all 0.4s cubic-bezier(.7, .25, 0,1)
-    }
-    .button:hover::after {
+}
+.button:hover::after 
+{
     width:100%;
-    }
-    .button:hover{
+}
+.button:hover
+{
     border-left:1px solid #b6cdef;
     border-right:1px solid #6098FF;
-    }
+}
