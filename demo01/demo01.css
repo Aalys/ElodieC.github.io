@@ -1,103 +1,80 @@
+
+@font-face {
+    font-family: 'arizoniaregular';
+    src: url('polices/arizonia-regular.woff2') format('woff2'),
+         url('polices/arizonia-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body{
-    background-image: linear-gradient(#f6feff,#0b7994);  
-    background-size: cover;
+    background-image: linear-gradient(#f6feff,#5a3e80);  
     background-repeat:no-repeat;
-    height: 100%;  
+    height: 55em;  
+    max-height: none;
 }
-
-/* Banner */
-
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Title of chip  */
-
-.t{
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-/* INFORMATIQUE ET SCIENCES */
-
-.a{
-    font-style: italic;
-    margin-bottom: 5px;
-}
-.b{
-    margin-bottom: 10px;
-}
-.CV{
-    text-align: center 
-}
-
-/* Navigation buttons */
-
-.wrapper 
+.photo
 {
-    margin: 80px auto;
+    position: absolute;
+    right: 0;
+    border: 1px solid black;
+    margin-right: 18em;
+    box-shadow: 1px 1px 5px  #312e33 ;
+    
+}
+
+.CV
+{
+    font-family: "arizoniaregular";
+    font-size: 3em;
+    border:1px solid;
+    width: 20%;
+    margin:auto;
     text-align: center;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    margin-bottom: 3em;
+    margin-top: 1.5em;
+    box-shadow: 1px 1px 5px  #312e33 ;
+}
+h2
+{
+    color: rgb(155, 114, 9);
+    -webkit-text-stroke: 1px #373638;  /* contour police */
+}
+
+/* Liseret avec position relative, redimension */
+.page
+{
+    display: flex;
+    justify-content: flex-start;
     width: 100%;
-    position: relative;
 }
-.button 
+
+.lisere 
 {
-    padding: 15px 100px;
-    margin:10px 4px;
-    color: #86421a;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    position: relative;
-    text-decoration: none;
-    display:inline-block;
+    height: 500px;
+    width: 16%;
+    margin-right: 3%;
+    margin-left: 1%;
+    background-image: url("./space.jpg");
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px  #312e33 ;
+    border: 1px solid rgb(212, 206, 206);
 }
-.button
+section
 {
-    border:1px solid transparent; 
-    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
-    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    padding: 3%;
 }
-.button::before 
+.contact
 {
-    content: '';
     position: absolute;
-    left: 0px;
-    bottom:0px;
-    z-index:-1;
-    width: 0%;
-    height:1px;
-    background: #003177;
-    box-shadow: inset 0px 0px 0px #b6cdef;
-    display: block;
-    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
-    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+    padding-left: 3em;
+    padding-top: 11em;
+    color: #e8e8ee;
 }
-.button:hover::before 
+.contact ul
 {
-    width:100%;
-}
-.button::after 
-{
-    content: '';
-    position: absolute;
-    right: 0px;
-    top:0px;
-    z-index:-1;
-    width: 0%;
-    height:1px;
-    background: #a9c1e8;
-    -webkit-transition: all 0.4s cubic-bezier(.7, .25, 0, 1);
-    transition: all 0.4s cubic-bezier(.7, .25, 0,1)
-}
-.button:hover::after 
-{
-    width:100%;
-}
-.button:hover
-{
-    border-left:1px solid #b6cdef;
-    border-right:1px solid #6098FF;
+    list-style-type: none;
 }
